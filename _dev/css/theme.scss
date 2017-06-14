@@ -404,9 +404,23 @@
   width: 50%;
   right: 0;
   top: 0;
+  margin: 0 !important;
 }
 
 .featured-products article{
-  width: 30%;
-  margin:0;
+  width: 33%;
+  margin:0 !important;
+}
+
+.featured-products article img, .featured-products article .highlighted-informations{
+  width: 100% !important;
+}
+
+.featured-products article>*{
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.product-flags, .product-description, .product-flags{
+  display: none;
 }
