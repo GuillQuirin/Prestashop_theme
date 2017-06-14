@@ -357,3 +357,56 @@
     padding-right: 0 !important;
   }
 }
+
+
+
+/***************************PROJET************************/
+
+
+#header {
+  background: yellow;
+  color: $gray;
+  position: fixed;
+  z-index: 99;
+}
+
+/*bannière*/
+.background_welcome{
+  position: fixed;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  margin: 0 !important;
+  height: 100%;
+}
+
+#custom-text{
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  background: hsla(0,0%,50%,.27);
+  transform: translateX(30%) translateY(-50%);
+  z-index: 98;
+}
+
+/*produits à la une*/
+.products{
+  margin: 0 !important;
+}
+
+.featured-products{
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+}
+
+.featured-products article{
+  width: 30%;
+  margin:0;
+}
