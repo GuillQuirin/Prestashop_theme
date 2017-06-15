@@ -376,6 +376,8 @@
   width: 50%;
   left: 0;
   top: 0;
+  background-color: #46ff95;
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   margin: 0 !important;
@@ -419,8 +421,22 @@
 .featured-products article>*{
   margin: 0 !important;
   width: 100% !important;
+  height: 100% !important;
 }
 
 .product-flags, .product-description, .product-flags{
   display: none;
+}
+
+.highlighted-informations{
+  bottom: -3rem !important;
+}
+
+.product-title{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.thumbnail-container:hover .highlighted-informations{
+  bottom: 0 !important;
 }
