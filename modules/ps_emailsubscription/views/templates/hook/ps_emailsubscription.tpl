@@ -23,10 +23,10 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div class="block_newsletter col-lg-8 col-md-12 col-sm-12">
+<div class="block_newsletter col-lg-12 col-md-12 col-sm-12">
   <div class="row">
-    <p class="col-md-5 col-xs-12">{l s='Get our latest news and special sales' d='Shop.Theme'}</p>
-    <div class="col-md-7 col-xs-12">
+    <p class="col-md-12 col-xs-12">{l s='Recevez nos offres spéciales' d='Shop.Theme'}</p>
+    <div class="col-md-12 col-xs-12">
       <form action="{$urls.pages.index}#footer" method="post">
         <div class="row">
           <div class="col-xs-12">
@@ -34,7 +34,7 @@
               class="btn btn-primary pull-xs-right hidden-xs-down"
               name="submitNewsletter"
               type="submit"
-              value="{l s='Subscribe' d='Shop.Theme.Actions'}"
+              value="{l s='' d='Shop.Theme.Actions'}"
             >
             <input
               class="btn btn-primary pull-xs-right hidden-sm-up"

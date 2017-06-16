@@ -1,4 +1,4 @@
-<div id="_desktop_user_info">
+<div id="_desktop_user_info" class="col-md-12">
   <div class="user-info">
     {if $logged}
       <a

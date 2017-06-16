@@ -23,9 +23,9 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div id="_desktop_currency_selector">
+<div id="_desktop_currency_selector" class="col-md-4">
   <div class="currency-selector dropdown js-dropdown">
-    <span>{l s='Currency:' d='Shop.Theme'}</span>
+   <!--  <span>{l s='Currency:' d='Shop.Theme'}</span> -->
     <span class="expand-more _gray-darker hidden-sm-down" data-toggle="dropdown">{$current_currency.iso_code} {$current_currency.sign}</span>
     <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hidden-sm-down">
       <i class="material-icons expand-more">&#xE5C5;</i>
