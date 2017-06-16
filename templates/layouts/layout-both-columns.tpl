@@ -42,6 +42,8 @@
         {include file='catalog/_partials/product-activation.tpl'}
       {/block}
 
+      <button id="button_header">Menu</button>
+      
       <header id="header">
         {block name='header'}
           {include file='_partials/header.tpl'}

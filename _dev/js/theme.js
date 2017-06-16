@@ -67,4 +67,27 @@ $(document).ready(() => {
   topMenu.init();
   productMinitature.init();
   productSelect.init();
+
+  //Menu déroulant
+  var i = 0;
+  $('#button_header').click(function(){
+    
+    var left = (i==1) ? '-25%' : '0';
+    $( "#header" ).animate({
+      left: left
+    }, 400, function() {
+      // Animation complete.
+    });
+
+    var left = (i==1) ? '0' : '25%';
+    var text = (i==1) ? 'Menu' : 'X';
+    $( "#button_header" ).animate({
+      left: left
+    }, 400, function() {
+      $( "#button_header" ).html(text);
+    });
+
+    i = (i==0) ? 1 : 0;   
+  });
+
 });

@@ -362,14 +362,33 @@
 
 /***************************PROJET************************/
 
+button#button_header{
+    color: black;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 30px;
+    background-color : white;
+}
+
+#button_header:focus{
+  outline: none;
+}
 
 #header {
-  background: yellow;
+  background: white;
   color: $gray;
   position: fixed;
   z-index: 99;
   height: 100%;
   width: 25%;
+  left: -25%;
+}
+
+#header .logo{
+  background-color: black;
 }
 
 #header .header-nav{
