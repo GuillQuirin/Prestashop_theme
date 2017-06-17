@@ -30,12 +30,9 @@
       <form action="{$urls.pages.index}#footer" method="post">
         <div class="row">
           <div class="col-xs-12">
-            <input
-              class="btn btn-primary pull-xs-right hidden-xs-down"
-              name="submitNewsletter"
-              type="submit"
-              value="{l s='' d='Shop.Theme.Actions'}"
-            >
+            <button class="btn btn-primary pull-xs-right hidden-xs-down" name="submitNewsletter" value="{l s='' d='Shop.Theme.Actions'}">
+              <i class="fa fa-envelope"></i>
+            </button>
             <input
               class="btn btn-primary pull-xs-right hidden-sm-up"
               name="submitNewsletter"

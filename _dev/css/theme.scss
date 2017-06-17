@@ -413,12 +413,12 @@ button#button_header{
 #custom-text{
   position: fixed;
   top: 50%;
-  left: 0;
+  right: 50%;
   width: 30%;
   margin: 0;
   padding: 0;
   background: hsla(0,0%,50%,.27);
-  transform: translateX(30%) translateY(-50%);
+  transform: translateY(-50%);
   z-index: 98;
 }
 
