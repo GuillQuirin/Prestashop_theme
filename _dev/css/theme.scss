@@ -362,6 +362,20 @@
 
 /***************************PROJET************************/
 
+#wrapper{
+  padding-top : 0;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+#content-wrapper{
+  padding: 0;
+  margin: 0;
+}
+
+
 button#button_header{
     color: black;
     z-index: 100;
@@ -399,7 +413,7 @@ button#button_header{
 /*bannière*/
 .background_welcome{
   position: fixed;
-  width: 50%;
+  width: 33.33%;
   left: 0;
   top: 0;
   background-color: #46ff95;
@@ -410,7 +424,23 @@ button#button_header{
   height: 100%;
 }
 
+#index .background_welcome{
+  width: 50%;
+}
+
 #custom-text{
+  position: fixed;
+  top: 50%;
+  right: 70%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  background: hsla(0,0%,50%,.27);
+  transform: translateY(-50%);
+  z-index: 98;
+}
+
+#index #custom-text{
   position: fixed;
   top: 50%;
   right: 50%;
@@ -452,11 +482,11 @@ button#button_header{
 }
 
 .featured-products{
-  position: absolute;
+ /* position: absolute;
   width: 50%;
   right: 0;
   top: 0;
-  margin: 0 !important;
+  margin: 0 !important;*/
 }
 
 .featured-products article{
@@ -490,3 +520,6 @@ button#button_header{
 .thumbnail-container:hover .highlighted-informations{
   bottom: 0 !important;
 }
+
+
+/*liste des produits d'une catégorie*/

@@ -50,18 +50,11 @@
         {/block}
       </header>
 
-      {block name='notifications'}
-        {include file='_partials/notifications.tpl'}
-      {/block}
-
       <section id="wrapper">
-        <div class="container">
-          {block name='breadcrumb'}
-            {include file='_partials/breadcrumb.tpl'}
-          {/block}
+        <div class="container-fluid">
 
           {block name="left_column"}
-            <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
+            <div id="left-column" class="col-xs-12 col-sm-4 col-md-4">
               {if $page.page_name == 'product'}
                 {hook h='displayLeftColumnProduct'}
               {else}
@@ -79,7 +72,7 @@
           {/block}
 
           {block name="right_column"}
-            <div id="right-column" class="col-xs-12 col-sm-4 col-md-3">
+            <div id="right-column" class="col-xs-12 col-sm-4 col-md-2">
               {if $page.page_name == 'product'}
                 {hook h='displayRightColumnProduct'}
               {else}
@@ -89,12 +82,6 @@
           {/block}
         </div>
       </section>
-
-      <footer id="footer">
-        {block name="footer"}
-          {include file="_partials/footer.tpl"}
-        {/block}
-      </footer>
 
     </main>
 
