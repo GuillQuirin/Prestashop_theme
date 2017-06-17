@@ -54,7 +54,7 @@
         <div class="container-fluid">
 
           {block name="left_column"}
-            <div id="left-column" class="col-xs-12 col-sm-4 col-md-4">
+            <div id="left-column" class="col-xs-12 col-sm-4 col-md-6">
               {if $page.page_name == 'product'}
                 {hook h='displayLeftColumnProduct'}
               {else}

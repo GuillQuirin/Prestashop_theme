@@ -373,6 +373,7 @@
 #content-wrapper{
   padding: 0;
   margin: 0;
+  background-color: white;
 }
 
 
@@ -431,8 +432,9 @@ button#button_header{
 #custom-text{
   position: fixed;
   top: 50%;
-  right: 70%;
-  width: 30%;
+  right: inherit;
+  left: 0;
+  width: 33.33%;
   margin: 0;
   padding: 0;
   background: hsla(0,0%,50%,.27);
@@ -441,15 +443,8 @@ button#button_header{
 }
 
 #index #custom-text{
-  position: fixed;
-  top: 50%;
   right: 50%;
-  width: 30%;
-  margin: 0;
-  padding: 0;
-  background: hsla(0,0%,50%,.27);
-  transform: translateY(-50%);
-  z-index: 98;
+  left: inherit;
 }
 
 /*menu déroulant*/
@@ -479,14 +474,6 @@ button#button_header{
 /*produits à la une*/
 .products{
   margin: 0 !important;
-}
-
-.featured-products{
- /* position: absolute;
-  width: 50%;
-  right: 0;
-  top: 0;
-  margin: 0 !important;*/
 }
 
 .featured-products article{
