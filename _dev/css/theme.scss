@@ -368,11 +368,12 @@
 
 .container-fluid{
   padding: 0;
+  background-color:white;
 }
 
-#content-wrapper{
-  padding: 0;
+#left-column, #content-wrapper, #right-column{
   margin: 0;
+  position:relative;
   background-color: white;
 }
 
@@ -434,7 +435,6 @@ button#button_header{
   top: 50%;
   right: inherit;
   left: 0;
-  width: 33.33%;
   margin: 0;
   padding: 0;
   background: hsla(0,0%,50%,.27);
@@ -481,7 +481,7 @@ article{
   margin:0 !important;
 }
 
-article img, .featured-products article .highlighted-informations{
+article img, article .highlighted-informations{
   width: 100% !important;
 }
 
@@ -497,6 +497,7 @@ article>*{
 
 .highlighted-informations{
   bottom: -3rem !important;
+  box-shadow:none;
 }
 
 .product-title{
@@ -510,3 +511,21 @@ article>*{
 
 
 /*liste des produits d'une catégorie*/
+
+.block-category{
+  position: absolute;
+  max-height: 200px;
+}
+
+.card{
+  border: 0;
+}
+
+#js-active-search-filters{
+  display:none;
+}
+
+#search_filters{
+  padding:0;
+  margin:0;
+}

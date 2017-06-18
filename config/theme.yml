@@ -70,6 +70,8 @@ global_settings:
       displayLeftColumn:
         - ps_banner
         - ps_customtext
+      displayRightColumn:
+        - ps_facetedsearch
       displayReassurance:
         - blockreassurance
       displayOrderConfirmation2:

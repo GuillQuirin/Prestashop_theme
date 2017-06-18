@@ -26,6 +26,16 @@
 
 {block name='right_column'}{/block}
 
+{block name="left_column"}
+	<div id="left-column" class="col-xs-12 col-sm-4 col-md-6">
+	  {if $page.page_name == 'product'}
+	    {hook h='displayLeftColumnProduct'}
+	  {else}
+	    {hook h="displayLeftColumn"}
+	  {/if}
+	</div>
+{/block}
+
 {block name='content_wrapper'}
   <div id="content-wrapper" class="left-column col-xs-12 col-sm-8 col-md-6">
     {block name='content'}
