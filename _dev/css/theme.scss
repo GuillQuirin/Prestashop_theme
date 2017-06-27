@@ -369,9 +369,14 @@ body{
   background-color: #f5f5f5;
 }
 
+.padding-side-0{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 h1,h2,h3,h4,h5{
-  font-family: Crimson Text;
-  font-weight: 500;
+  font-family: Crimson Text !important;
+  font-weight: 500 !important;
 }
 
 #wrapper{
@@ -620,4 +625,68 @@ article>*{
   max-width: 570px;
   font-size: medium;
   padding: 0 15px;
+}
+
+/* Panier */
+.cart-grid-body .cart-overview{
+  padding: 0 !important;
+}
+
+.product-line-grid-right .bootstrap-touchspin>.form-control{
+  height: 2rem;
+}
+
+.js-cart-line-product-quantity{
+  font-size: 15px;
+  text-align: center;
+}
+
+.input-group-btn-vertical{
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+}
+
+.js-increase-product-quantity{
+  position: absolute !important;
+  width: 25% !important;
+  height: 100% !important;
+  right: 0 !important;
+}
+
+.js-decrease-product-quantity{
+  position: absolute !important;
+  width: 25% !important;
+  height: 100% !important;
+  left: -30% !important; 
+  margin-top: 0 !important;
+}
+
+.bootstrap-touchspin .input-group-btn-vertical i{
+  font-size: 0.5em !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(-50%) !important;
+}
+
+.product-line-grid-body .product-line-info:first-child{
+  font-weight: bold;
+}
+
+.product-line-grid-right .bootstrap-touchspin{
+  box-shadow: 0 0 0 rgba(0,0,0,.15);
+}
+
+.cart-summary{
+  background-color: #dddddd;
+}
+
+.cart-total span {
+  font-weight: bold !important;
+  font-size: medium;
+}
+
+.checkout.cart-detailed-actions.card-block{
+  padding: 0.5em !important;
 }

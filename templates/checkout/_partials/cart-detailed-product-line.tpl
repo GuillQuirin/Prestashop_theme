@@ -31,7 +31,7 @@
   </div>
 
   <!--  product left body: description -->
-  <div class="product-line-grid-body col-md-4 col-xs-8">
+  <div class="product-line-grid-body col-md-3 col-xs-8 padding-side-0">
     <div class="product-line-info">
       <a class="label" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
     </div>
@@ -61,12 +61,12 @@
 
     <br/>
 
-    {foreach from=$product.attributes key="attribute" item="value"}
+    {*foreach from=$product.attributes key="attribute" item="value"}
       <div class="product-line-info">
         <span class="label">{$attribute}:</span>
         <span class="value">{$value}</span>
       </div>
-    {/foreach}
+    {/foreach*}
 
     {if $product.customizations|count}
       <br>
@@ -111,12 +111,12 @@
   </div>
 
   <!--  product left body: description -->
-  <div class="product-line-grid-right product-line-actions col-md-5 col-xs-12">
+  <div class="product-line-grid-right product-line-actions col-md-6 col-xs-12">
     <div class="row">
       <div class="col-xs-4 hidden-md-up"></div>
       <div class="col-md-10 col-xs-6">
         <div class="row">
-          <div class="col-md-6 col-xs-6 qty">
+          <div class="col-md-6 col-xs-6 qty padding-side-0">
             {if isset($product.is_gift) && $product.is_gift}
               <span class="gift-quantity">{$product.quantity}</span>
             {else}

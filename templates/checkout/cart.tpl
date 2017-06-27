@@ -27,7 +27,7 @@
 {block name='content'}
 
   <section id="main">
-    <div class="cart-grid row">
+    <div class="cart-grid">
 
       <!-- Left Block: cart product informations & shpping -->
       <div class="cart-grid-body col-xs-12 col-lg-8">
@@ -37,7 +37,7 @@
           <div class="card-block">
             <h1 class="h1">{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h1>
           </div>
-          <hr>
+
           {block name='cart_overview'}
             {include file='checkout/_partials/cart-detailed.tpl' cart=$cart}
           {/block}
