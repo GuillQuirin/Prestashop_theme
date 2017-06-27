@@ -24,7 +24,7 @@
 *}
 
 <div 	
-	class="background_welcome banner hidden-sm-down" 
+	class="background banner hidden-sm-down" 
 	href="{$banner_link}" 
 	title="{$banner_desc}" 
 	{if isset($banner_img)}

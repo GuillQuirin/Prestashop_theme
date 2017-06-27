@@ -371,6 +371,7 @@ body{
 
 h1,h2,h3,h4,h5{
   font-family: Crimson Text;
+  font-weight: 500;
 }
 
 #wrapper{
@@ -445,19 +446,16 @@ button#button_header{
   margin-bottom:0; 
 }
 
-.background_welcome{
+.background{
   position: fixed;
-  width: 33.33%;
   left: 0;
   top: 0;
   background-size: cover;
-  background-position: center;
-  margin: 0 !important;
+  background-position: top center;
+  margin: 0!important;
   height: 100%;
-}
-
-#index .background_welcome{
-  width: 50%;
+  width: inherit;
+  background-repeat: no-repeat;
 }
 
 #custom-text{
@@ -488,9 +486,9 @@ button#button_header{
   padding: 25% 0;
 }
 
-#index #custom-text{
+#custom-text{
   right: 50%;
-  left: inherit;
+  left: initial;
 }
 
 /*menu déroulant*/
@@ -515,6 +513,11 @@ button#button_header{
   background-color : black;
   width: 3em;
   height: 3em;
+}
+
+.search-widget form input[type=text]{
+  background: transparent;
+  border: 1px solid #ebebeb;
 }
 
 /*produits à la une*/
@@ -605,4 +608,16 @@ article>*{
 #search_filters{
   padding:0;
   margin:0;
+}
+
+/* 404 */
+.page-not-found .search-widget form{
+  display: block;
+}
+
+#pagenotfound #main .page-header{
+  margin: 2rem auto 3rem;
+  max-width: 570px;
+  font-size: medium;
+  padding: 0 15px;
 }
