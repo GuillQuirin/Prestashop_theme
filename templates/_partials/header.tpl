@@ -29,10 +29,10 @@
 {/block}
 
 {block name='header_nav'}
-  <nav class="header-nav">
+  <nav class="header-nav hidden-xs-up">
     <div class="container-fluid">
         <div class="row">
-          <div class="hidden-sm-down">
+          <div class="">
             <div class="col-md-4 col-xs-12">
               {hook h='displayNav1'}
             </div>

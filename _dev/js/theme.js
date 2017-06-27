@@ -72,15 +72,15 @@ $(document).ready(() => {
   var i = 0;
   $('#button_header').click(function(){
     
-    var left = (i==1) ? '-25%' : '0';
+    var left = (i==1) ? '-250px' : '0';
     $( "#header" ).animate({
       left: left
     }, 400, function() {
       // Animation complete.
     });
 
-    var left = (i==1) ? '0' : '25%';
-    var text = (i==1) ? 'Menu' : 'X';
+    var left = (i==1) ? '0' : '250px';
+    var text = (i==1) ? '<i class="fa fa-bars fa-2x" aria-hidden="true"></i>' : 'X';
     $( "#button_header" ).animate({
       left: left
     }, 400, function() {

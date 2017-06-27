@@ -23,9 +23,14 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div id="custom-text">
+<div id="custom-text" class="hidden-sm-down">
 	<a href="{$urls.base_url}">
         {$cms_infos.text nofilter}
-<!--         <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}"> -->
+  	</a> 
+</div>
+
+<div id="custom-text-respons" class="hidden-md-up">
+	<a href="{$urls.base_url}">
+        {$cms_infos.text nofilter}
   	</a> 
 </div>

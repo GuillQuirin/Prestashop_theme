@@ -362,6 +362,17 @@
 
 /***************************PROJET************************/
 
+/*Commande : npm run build */
+
+body{
+  font-family: Open Sans;
+  background-color: #f5f5f5;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: Crimson Text;
+}
+
 #wrapper{
   padding-top : 0;
 }
@@ -373,20 +384,21 @@
 
 #left-column, #content-wrapper, #right-column{
   margin: 0;
+  padding: 0;
   position:relative;
   background-color: white;
 }
 
-
 button#button_header{
-    color: black;
-    z-index: 100;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100px;
-    height: 30px;
-    background-color : white;
+  color: #b1b0b0;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  border: 0;
+  height: 50px;
+  background-color: #fff;
 }
 
 #button_header:focus{
@@ -399,8 +411,12 @@ button#button_header{
   position: fixed;
   z-index: 99;
   height: 100%;
-  width: 25%;
-  left: -25%;
+  width: 250px;
+  left: -250px;
+}
+
+#header .header-top{
+  background: white;
 }
 
 #header .logo{
@@ -411,15 +427,29 @@ button#button_header{
   border-bottom: 0;
 }
 
+.block_newsletter form .btn {
+    height: 42px !important;
+}
+
+.header-top .search-widget form input[type=text]{
+  background-color: #ebebeb;
+}
+
+.navbar-toggler{
+  padding: 0;
+  cursor: pointer;
+}
 
 /*bannière*/
+#wrapper .banner{
+  margin-bottom:0; 
+}
+
 .background_welcome{
   position: fixed;
   width: 33.33%;
   left: 0;
   top: 0;
-  background-color: #46ff95;
-  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   margin: 0 !important;
@@ -436,10 +466,26 @@ button#button_header{
   right: inherit;
   left: 0;
   margin: 0;
-  padding: 0;
-  background: hsla(0,0%,50%,.27);
+  vertical-align: middle;
+  background-color: rgba(70, 255, 149, 0.37);
+  background-blend-mode: multiply;
   transform: translateY(-50%);
   z-index: 98;
+}
+
+#custom-text-respons{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  margin: 0;
+  background-color: rgba(70,255,149,.37);
+  background-blend-mode: multiply;
+  transform: translateY(-50%);
+  padding: 25% 0;
 }
 
 #index #custom-text{
@@ -497,7 +543,7 @@ article>*{
 
 .highlighted-informations{
   bottom: -3rem !important;
-  box-shadow:none;
+  box-shadow:none !important;
 }
 
 .product-title{
@@ -505,10 +551,41 @@ article>*{
   margin-bottom: 0 !important;
 }
 
-.thumbnail-container:hover .highlighted-informations{
-  bottom: 0 !important;
+.thumbnail-container{
+  box-shadow: none !important;
 }
 
+.thumbnail-container:hover .highlighted-informations{
+  bottom: 0 !important;
+  color: white !important;
+  box-shadow: none;
+  background: linear-gradient(180deg,rgba(255,0,0,0),#656363);
+}
+
+.highlighted-informations .product-title a{
+  color: white;
+  font-weight: bold;
+}
+
+.highlighted-informations .price{
+  color: white;
+}
+
+.thumbnail-container .bg_highlight_product{
+  height: 25vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.thumbnail-container:hover .bg_highlight_product{
+  background-color: rgba(70,255,149,.37);
+  background-blend-mode: multiply;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+}
 
 /*liste des produits d'une catégorie*/
 

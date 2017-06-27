@@ -24,6 +24,23 @@
  *}
 {extends file='catalog/listing/product-list.tpl'}
 
+{block name="left_column"}
+	<div id="left-column" class="col-xs-12 col-sm-4 col-md-0">
+	  {if $page.page_name == 'product'}
+	    {hook h='displayLeftColumnProduct'}
+	  {elseif $page.page_name == 'category'}
+		{if $category.image.large.url}
+			<div class="category-cover">
+			  <img src="{$category.image.large.url}" alt="{$category.image.legend}">
+			</div>
+		{/if}
+		{hook h="displayLeftColumn"}
+	  {else}
+	    {hook h="displayLeftColumn"}
+	  {/if}
+	</div>
+{/block}
+
 {block name='product_list_header'}
     <div class="block-category card card-block hidden-sm-down col-md-4">
       <h1 class="h1">{$category.name}</h1>

@@ -23,11 +23,20 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div 	class="background_welcome banner hidden-sm-down" 
-		href="{$banner_link}" 
-		title="{$banner_desc}" 
-		{if isset($banner_img)}
-			style="background-image:url({$banner_img});"
-		{/if}		
+<div 	
+	class="background_welcome banner hidden-sm-down" 
+	href="{$banner_link}" 
+	title="{$banner_desc}" 
+	{if isset($banner_img)}
+		style="background-image:url({$banner_img});"
+	{/if}
 >
 </div>
+
+<img 	
+	class="banner hidden-md-up" 
+	style="max-width: 100%;"
+	{if isset($banner_img)}
+		src="{$banner_img}"
+	{/if}
+>

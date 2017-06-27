@@ -27,11 +27,13 @@
     <div class="thumbnail-container">
       {block name='product_thumbnail'}
         <a href="{$product.url}" class="thumbnail product-thumbnail">
-          <img
+          <div class="bg_highlight_product" 
+               style="background-image: url({$product.cover.bySize.home_default.url});"></div>
+          <!-- <img
             src = "{$product.cover.bySize.home_default.url}"
             alt = "{$product.cover.legend}"
             data-full-size-image-url = "{$product.cover.large.url}"
-          >
+          > -->
         </a>
       {/block}
 
@@ -75,8 +77,8 @@
         {/foreach}
       </ul>
     {/block}
-
-    <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
+    
+    <div class="highlighted-informations{if !$product.main_variants} no-variants{/if}">
       {block name='product_name'}
         <p class="product-title" itemprop="name">
           <a href="{$product.url}">{$product.name|truncate:30:'...'}</a>
