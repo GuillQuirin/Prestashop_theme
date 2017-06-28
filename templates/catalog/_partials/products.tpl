@@ -25,7 +25,7 @@
 <div id="js-product-list">
   <div class="products row">
     <!-- Case vide pour laisser de la place à la description de la catégorie -->
-    <article class="col-4"></article>
+    <article class="hidden-sm-down col-4"></article>
     {foreach from=$listing.products item="product"}
       {block name='product_miniature'}
         {include file='catalog/_partials/miniatures/product.tpl' product=$product}

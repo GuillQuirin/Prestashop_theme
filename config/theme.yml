@@ -19,7 +19,7 @@ meta:
       name: Three Columns
       description: One large central column and 2 side columns.
     layout-both-columns-category:
-      name: Three Columns
+      name: Two Columns for category
       description: One large central column and 2 side columns.
     layout-left-column:
       name: Two Columns, small left column

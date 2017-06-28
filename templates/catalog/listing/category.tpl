@@ -30,9 +30,11 @@
 	    {hook h='displayLeftColumnProduct'}
 	  {elseif $page.page_name == 'category'}
 		{if $category.image.large.url}
-			<div class="category-cover">
-			  <img src="{$category.image.large.url}" alt="{$category.image.legend}">
+			<div class="hidden-sm-down background category-cover"
+				style="background-image: url({$category.image.large.url});">
 			</div>
+			<!-- TODO : trouver l'URL de l'image originale -->
+			<img class="hidden-md-up banner" src="{$category.image.large.url}">
 		{/if}
 		{hook h="displayLeftColumn"}
 	  {else}
