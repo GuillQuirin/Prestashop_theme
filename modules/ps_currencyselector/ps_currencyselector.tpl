@@ -23,24 +23,22 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div id="currency_selector" class="col-xs-6 col-md-6">
-  <div class="currency-selector dropdown js-dropdown">
+<div id="currency_selector" class="col-xs-4 col-md-4 text-center currency-selector dropdown js-dropdown">
    <!--  <span>{l s='Currency:' d='Shop.Theme'}</span> -->
-    <span class="expand-more _gray-darker hidden-sm-down" data-toggle="dropdown">{$current_currency.iso_code} {$current_currency.sign}</span>
-    <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hidden-sm-down">
+    <span class="expand-more _gray-darker" data-toggle="dropdown">{*$current_currency.iso_code*} {$current_currency.sign}</span>
+    <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="">
       <i class="material-icons expand-more">&#xE5C5;</i>
     </a>
-    <ul class="dropdown-menu hidden-sm-down" aria-labelledby="dLabel">
+    <ul class="dropdown-menu" aria-labelledby="dLabel">
       {foreach from=$currencies item=currency}
-        <li {if $currency.current} class="current" {/if}>
-          <a title="{$currency.name}" rel="nofollow" href="{$currency.url}" class="dropdown-item">{$currency.iso_code} {$currency.sign}</a>
+        <li class="text-center {if $currency.current} current{/if}">
+          <a title="{$currency.name}" rel="nofollow" href="{$currency.url}" class="dropdown-item">{*$currency.iso_code*} {$currency.sign}</a>
         </li>
       {/foreach}
     </ul>
-    <select class="link hidden-md-up">
+    <select class="link hidden-xs-up">
       {foreach from=$currencies item=currency}
-        <option value="{$currency.url}"{if $currency.current} selected="selected"{/if}>{$currency.iso_code} {$currency.sign}</option>
+        <option value="{$currency.url}"{if $currency.current} selected="selected"{/if}>{*$currency.iso_code*} {$currency.sign}</option>
       {/foreach}
     </select>
-  </div>
 </div>

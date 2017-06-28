@@ -30,7 +30,7 @@
 
     {block name='page_header_container'}
       {block name='page_title' hide}
-        <header class="page-header">
+        <header class="page-header col-md-12">
           <h1>{$smarty.block.child}</h1>
         </header>
       {/block}

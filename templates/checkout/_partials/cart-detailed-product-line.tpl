@@ -31,7 +31,7 @@
   </div>
 
   <!--  product left body: description -->
-  <div class="product-line-grid-body col-md-3 col-xs-8 padding-side-0">
+  <div class="product-line-grid-body col-md-3 col-xs-4 padding-side-0">
     <div class="product-line-info">
       <a class="label" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
     </div>
@@ -111,12 +111,12 @@
   </div>
 
   <!--  product left body: description -->
-  <div class="product-line-grid-right product-line-actions col-md-6 col-xs-12">
+  <div class="product-line-grid-right product-line-actions col-md-6 col-xs-4">
     <div class="row">
-      <div class="col-xs-4 hidden-md-up"></div>
+      <div class="col-xs-4 hidden-xs-up"></div>
       <div class="col-md-10 col-xs-6">
         <div class="row">
-          <div class="col-md-6 col-xs-6 qty padding-side-0">
+          <div class="col-md-6 col-xs-12 qty padding-side-0">
             {if isset($product.is_gift) && $product.is_gift}
               <span class="gift-quantity">{$product.quantity}</span>
             {else}
@@ -146,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-2 col-xs-2 text-xs-right">
+      <div class="col-md-2 col-xs-7 text-xs-right padding-side-0">
         <div class="cart-line-product-actions">
           <a
               class                       = "remove-from-cart"

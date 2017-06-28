@@ -4,7 +4,7 @@
       {if $cart.products_count > 0}
         <a rel="nofollow" href="{$cart_url}">
       {/if}
-        <i class="material-icons shopping-cart">shopping_cart</i>
+        <i class="material-icons fa fa-bitbucket"></i>
         <span class="">{l s='Cart' d='Shop.Theme.Checkout'}</span>
         <span class="cart-products-count">({$cart.products_count})</span>
       {if $cart.products_count > 0}

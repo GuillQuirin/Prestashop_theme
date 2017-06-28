@@ -446,6 +446,30 @@ button#button_header{
   cursor: pointer;
 }
 
+.header-top .fa-bitbucket{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0px;
+  width: 25px;
+}
+
+.header-top .title.clearfix{
+  cursor: pointer;
+}
+
+.header-top .links{
+  position: absolute;
+  top: 100%;
+}
+
+.header-top .navbar-toggler i{
+  color: black;
+}
+
+#currency_selector .dropdown-menu li{
+  text-align: center;
+}
+
 /*bannière*/
 #wrapper .banner{
   margin-bottom:0; 
@@ -620,6 +644,10 @@ article>*{
   display: block;
 }
 
+#main .page-header{
+  margin : 1.5625rem auto;
+}
+
 #pagenotfound #main .page-header{
   margin: 2rem auto 3rem;
   max-width: 570px;
@@ -633,7 +661,7 @@ article>*{
 }
 
 .product-line-grid-right .bootstrap-touchspin>.form-control{
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .js-cart-line-product-quantity{
@@ -644,7 +672,7 @@ article>*{
 .input-group-btn-vertical{
   position: absolute !important;
   width: 100% !important;
-  height: 100% !important;
+  height: 1.5rem !important;
   left: 0 !important;
 }
 
@@ -674,8 +702,28 @@ article>*{
   font-weight: bold;
 }
 
+.product-line-grid-right .cart-line-product-actions .remove-from-cart{
+  margin-top: 0;
+}
+
+.product-line-grid-right .price{
+  margin: 5px auto;
+}
+
+.checkout .btn-primary{
+  padding: 10px;
+}
+
+.qty{
+  padding-top: 20px;
+}
+
 .product-line-grid-right .bootstrap-touchspin{
   box-shadow: 0 0 0 rgba(0,0,0,.15);
+}
+
+.product-line-grid-right .product-price{
+  line-height: 0;
 }
 
 .cart-summary{

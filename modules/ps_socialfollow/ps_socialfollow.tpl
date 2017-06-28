@@ -26,10 +26,22 @@
 
 {block name='block_social'}
   <div class="block-social col-lg-12 col-md-12 col-sm-12">
-    <ul>
-      {foreach from=$social_links item='social_link'}
-        <li class="{$social_link.class}"><a href="{$social_link.url}" target="_blank">{$social_link.label}</a></li>
-      {/foreach}
-    </ul>
+  	<div class="row">
+  		<div class="col-md-12 wrapper">
+		  	<div class="title clearfix" data-target="#socials" data-toggle="collapse">
+				<span class="navbar-toggler collapse-icons">
+					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+				</span>
+				<span class="h3">Suivez-nous</span>
+			</div>
+		    <ul id="socials" class="collapse">
+		      {foreach from=$social_links item='social_link'}
+		        <li class="{$social_link.class}">
+		        	<a href="{$social_link.url}" target="_blank">{$social_link.label}</a>
+		        </li>
+		      {/foreach}
+		    </ul>
+		</div>
+	</div>
   </div>
 {/block}
