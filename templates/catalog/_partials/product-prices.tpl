@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {if $product.show_price}
-  <div class="product-prices">
+  <div class="product-prices text-xs-right row">
     {block name='product_discount'}
       {if $product.has_discount}
         <div class="product-discount">
@@ -35,7 +35,7 @@
 
     {block name='product_price'}
       <div
-        class="product-price h5 {if $product.has_discount}has-discount{/if}"
+        class="product-price h5 col-xs-10 {if $product.has_discount}has-discount{/if}"
         itemprop="offers"
         itemscope
         itemtype="https://schema.org/Offer"
@@ -89,7 +89,7 @@
 
     {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
 
-    <div class="tax-shipping-delivery-label">
+    <div class="tax-shipping-delivery-label col-xs-2">
       {if $configuration.display_taxes_label}
         {$product.labels.tax_long}
       {/if}

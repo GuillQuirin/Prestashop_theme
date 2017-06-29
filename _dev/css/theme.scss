@@ -569,6 +569,30 @@ article>*{
   height: 100% !important;
 }
 
+.quick-view{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  color: white !important;
+}
+
+.quickview .social-sharing{
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+}
+
+.quickview .social-sharing ul{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.quickview .social-sharing li{
+  box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
 .product-flags, .product-description, .product-flags{
   display: none;
 }
@@ -585,6 +609,16 @@ article>*{
 
 .thumbnail-container{
   box-shadow: none !important;
+}
+
+.product-add-to-cart .btn-primary{
+  color: black;
+  background-color: #46ff95;
+  box-shadow: none;
+}
+
+.product-quantity .add{
+  float: right !important;
 }
 
 .thumbnail-container:hover .highlighted-informations{
