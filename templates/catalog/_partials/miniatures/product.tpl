@@ -87,7 +87,7 @@
       {/block}
       
       {block name='quick_view'}
-        <a class="quick-view" href="#" data-link-action="quickview">
+        <a class="quick-view hidden-sm-down" href="#" data-link-action="quickview">
           <i class="material-icons search fa fa-eye" aria-hidden="true"></i> {l s='' d='Shop.Theme.Actions'}
         </a>
       {/block}

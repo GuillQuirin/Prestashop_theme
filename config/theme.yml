@@ -18,9 +18,6 @@ meta:
     layout-both-columns:
       name: Three Columns
       description: One large central column and 2 side columns.
-    layout-both-columns-category:
-      name: Two Columns for category
-      description: One large central column and 2 side columns.
     layout-left-column:
       name: Two Columns, small left column
       description: Two columns with a small left column
@@ -117,9 +114,10 @@ theme_settings:
   default_layout: layout-left-column
   layouts:
     home: layout-left-column
-    category: layout-both-columns-category
+    category: layout-both-columns
     best-sales: layout-left-column
     new-products: layout-left-column
     prices-drop: layout-left-column
     contact: layout-left-column
     pagenotfound: layout-left-column
+    product: layout-content-only

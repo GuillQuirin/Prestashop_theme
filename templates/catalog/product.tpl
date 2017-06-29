@@ -50,7 +50,7 @@
   <section id="main" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
 
-    <div class="row">
+    <div class="row full-product">
       <div class="col-md-6">
         {block name='page_content_container'}
           <section class="page-content" id="content">
@@ -75,15 +75,15 @@
           </section>
         {/block}
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 row">
           {block name='page_header_container'}
             {block name='page_header'}
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
-          {block name='product_prices'}
+          {*block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
-          {/block}
+          {/block*}
 
           <div class="product-information">
             {block name='product_description_short'}
@@ -102,7 +102,23 @@
                   <input type="hidden" name="token" value="{$static_token}">
                   <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                   <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
-
+                  
+                  <div class="product-quantity">
+                    <div class="row">
+                      <span class=" col-md-6">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
+                      <div class="qty">
+                        <input
+                          type="text"
+                          name="qty"
+                          id="quantity_wanted"
+                          value="{$product.quantity_wanted}"
+                          class="input-group col-md-6"
+                          min="{$product.minimal_quantity}"
+                        >
+                      </div>
+                    </div>
+                  </div>
+{include file='templates/_partials/breadcrumb.tpl'}
                   {block name='product_variants'}
                     {include file='catalog/_partials/product-variants.tpl'}
                   {/block}

@@ -22,13 +22,15 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
-<div id="custom-text" class="hidden-sm-down">
-	<a href="{$urls.base_url}">
-        {$cms_infos.text nofilter}
-  	</a> 
-</div>
-
+<a href="{$urls.base_url}">
+	{if $page.page_name == 'category'}
+		<div id="custom-text" class="custom-text-cat hidden-sm-down">
+	{else}
+		<div id="custom-text" class="hidden-sm-down">
+	{/if}
+	    	{$cms_infos.text nofilter} 
+		</div>
+</a>
 <div id="custom-text-respons" class="hidden-md-up">
 	<a href="{$urls.base_url}">
         {$cms_infos.text nofilter}

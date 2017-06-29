@@ -25,7 +25,7 @@
 {extends file='catalog/listing/product-list.tpl'}
 
 {block name="left_column"}
-	<div id="left-column" class="col-xs-12 col-sm-4 col-md-0">
+	<div id="left-column" class="col-xs-12 col-sm-4 col-md-4">
 	  {if $page.page_name == 'product'}
 	    {hook h='displayLeftColumnProduct'}
 	  {elseif $page.page_name == 'category'}
@@ -36,7 +36,7 @@
 			<!-- TODO : trouver l'URL de l'image originale -->
 			<img class="hidden-md-up banner" src="{$category.image.large.url}">
 		{/if}
-		{hook h="displayLeftColumn"}
+		{hook h="displayNav"}
 	  {else}
 	    {hook h="displayLeftColumn"}
 	  {/if}

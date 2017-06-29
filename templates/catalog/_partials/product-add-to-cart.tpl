@@ -26,19 +26,21 @@
   {if !$configuration.is_catalog}
     {block name='product_quantity'}
       <div class="product-quantity">
-        <div class="row">
-          <span class=" col-md-6">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
-          <div class="qty">
-            <input
-              type="text"
-              name="qty"
-              id="quantity_wanted"
-              value="{$product.quantity_wanted}"
-              class="input-group col-md-6"
-              min="{$product.minimal_quantity}"
-            >
+        {if $page.page_name != 'product'}
+          <div class="row">
+            <span class=" col-md-6">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
+            <div class="qty">
+              <input
+                type="text"
+                name="qty"
+                id="quantity_wanted"
+                value="{$product.quantity_wanted}"
+                class="input-group col-md-6"
+                min="{$product.minimal_quantity}"
+              >
+            </div>
           </div>
-        </div>
+        {/if}
         
         <hr>
 

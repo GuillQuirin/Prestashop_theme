@@ -470,6 +470,10 @@ button#button_header{
   text-align: center;
 }
 
+.user-info .account{
+  display: block;
+}
+
 /*bannière*/
 #wrapper .banner{
   margin-bottom:0; 
@@ -593,6 +597,11 @@ article>*{
   background-color: transparent;
 }
 
+.quickview .current-price span[itemprop="price"]{
+  color: black;
+  font-weight: normal;
+}
+
 .product-flags, .product-description, .product-flags{
   display: none;
 }
@@ -658,6 +667,13 @@ article>*{
 .block-category{
   position: absolute;
   max-height: 200px;
+}
+
+#custom-text.custom-text-cat{
+  left: 0;
+  right: inherit;
+  width: inherit;
+  top: 50%;
 }
 
 .card{
@@ -817,4 +833,57 @@ article>*{
 
 #my-account .links .link-item{
   background-color: #bafbce !important;  
+}
+
+/* Produit */
+
+#blockcart-modal .modal-header{
+  background-color: black !important;
+}
+
+#blockcart-modal .modal-header h4{
+  color: #bafbce !important;
+  font-weight: bold !important;
+}
+
+@media (max-width: 767px){
+  #blockcart-modal .modal-body {
+    padding: 1rem 3rem;
+  }
+}
+
+#blockcart-modal strong{
+  color: black;
+}
+
+#blockcart-modal .cart-content-btn a{
+  color: black;
+  background-color: #b9facd;
+  box-shadow: none !important;
+}
+
+#blockcart-modal .cart-content-btn a:hover{
+  background-color: #50ec97;
+}
+
+#blockcart-modal .cart-content-btn button{
+  display: block;
+}
+
+#blockcart-modal .cart-content .cart-content-btn{
+  display: inline-block;
+}
+
+#blockcart-modal .product-name{
+  color: black;
+  font-weight: normal;
+}
+
+.full-product{
+  margin: 0 !important;
+  padding: 10px 0 !important;
+}
+
+.product-cover img{
+  box-shadow: none;
 }
