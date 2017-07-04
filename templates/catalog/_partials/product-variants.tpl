@@ -22,9 +22,9 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="product-variants row">
+<div class="product-variants">
   {foreach from=$groups key=id_attribute_group item=group}
-    <div class="clearfix product-variants-item col-md-3">
+    <div class="clearfix product-variants-item col-md-4">
       <span class="col-md-6">{$group.name}</span>
       {if $group.group_type == 'select'}
         <select

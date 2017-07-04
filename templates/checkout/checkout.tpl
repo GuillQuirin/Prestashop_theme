@@ -22,8 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<!doctype html>
-<html lang="{$language.iso_code}">
+ {extends file=$layout}
 
   <head>
     {block name='head'}
@@ -38,9 +37,9 @@
     {/block}
 
     <header id="header">
-      {block name='header'}
+      {*block name='header'}
         {include file='checkout/_partials/header.tpl'}
-      {/block}
+      {/block*}
     </header>
 
     {block name='notifications'}
@@ -52,7 +51,7 @@
 
       {block name='content'}
         <section id="content">
-          <div class="row">
+          <div class="">
             <div class="col-md-8">
               {block name='cart_summary'}
                 {render file='checkout/checkout-process.tpl' ui=$checkout_process}
@@ -72,11 +71,11 @@
       </div>
     </section>
 
-    <footer id="footer">
-      {block name='footer'}
+    <!-- <footer id="footer">
+      {*block name='footer'}
         {include file='checkout/_partials/footer.tpl'}
-      {/block}
-    </footer>
+      {/block*}
+    </footer> -->
 
     {block name='javascript_bottom'}
       {include file="_partials/javascript.tpl" javascript=$javascript.bottom}
@@ -87,5 +86,3 @@
     {/block}
 
   </body>
-
-</html>

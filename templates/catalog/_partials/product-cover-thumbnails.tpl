@@ -23,6 +23,24 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="images-container">
+  {block name='product_cover'}
+    <div class="product-cover hidden-md-up">
+      <img class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+      <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
+        <i class="material-icons zoom-in">&#xE8FF;</i>
+      </div>
+    </div>
+    <div class="product-cover hidden-sm-down" style="background-image: url({$product.cover.bySize.large_default.url});">
+      <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
+        <i class="material-icons zoom-in">&#xE8FF;</i>
+      </div>
+    </div>
+  {/block}
+
+  {block name='breadcrumb'}
+            {include file='_partials/breadcrumb.tpl'}
+          {/block}
+          
   {block name='product_images'}
     <div class="js-qv-mask mask">
       <ul class="product-images js-qv-product-images">
@@ -41,14 +59,6 @@
           </li>
         {/foreach}
       </ul>
-    </div>
-  {/block}
-  {block name='product_cover'}
-    <div class="product-cover">
-      <img class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
-      <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
-        <i class="material-icons zoom-in">&#xE8FF;</i>
-      </div>
     </div>
   {/block}
 </div>

@@ -45,6 +45,10 @@
   {/if}
 {/block}
 
+{block name='header'}
+  {include file='_partials/header.tpl'}
+{/block}
+
 {block name='content'}
 
   <section id="main" itemscope itemtype="https://schema.org/Product">
@@ -63,9 +67,9 @@
                 </ul>
               {/block}
 
-              {block name='product_cover_thumbnails'}
+              {*block name='product_cover_thumbnails'}
                 {include file='catalog/_partials/product-cover-thumbnails.tpl'}
-              {/block}
+              {/block*}
               <div class="scroll-box-arrows">
                 <i class="material-icons left">&#xE314;</i>
                 <i class="material-icons right">&#xE315;</i>
@@ -76,6 +80,18 @@
         {/block}
         </div>
         <div class="col-md-6 row">
+        
+          {block name='page_content'}
+              {block name='product_cover_thumbnails'}
+                {include file='catalog/_partials/product-cover-thumbnails.tpl'}
+              {/block}
+              <div class="scroll-box-arrows">
+                <i class="material-icons left">&#xE314;</i>
+                <i class="material-icons right">&#xE315;</i>
+              </div>
+
+          {/block}
+
           {block name='page_header_container'}
             {block name='page_header'}
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
@@ -103,25 +119,35 @@
                   <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                   <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
                   
-                  <div class="product-quantity">
-                    <div class="row">
-                      <span class=" col-md-6">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
-                      <div class="qty">
-                        <input
-                          type="text"
-                          name="qty"
-                          id="quantity_wanted"
-                          value="{$product.quantity_wanted}"
-                          class="input-group col-md-6"
-                          min="{$product.minimal_quantity}"
-                        >
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="product-quantity">
+                        <div class="">
+                          <span class="">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
+                          <!-- <div class="qty"> -->
+                          <div>
+                            <input
+                              type="text"
+                              name="qty"
+                              id="quantity_wanted"
+                              value="{$product.quantity_wanted}"
+                              class="input-group col-md-6"
+                              min="{$product.minimal_quantity}"
+                            >
+                          </div>
+                        </div>
                       </div>
                     </div>
+                  
+                    {block name='product_variants'}
+                      {include file='catalog/_partials/product-variants.tpl'}
+                    {/block}
+
                   </div>
-{include file='templates/_partials/breadcrumb.tpl'}
-                  {block name='product_variants'}
-                    {include file='catalog/_partials/product-variants.tpl'}
-                  {/block}
+
+
 
                   {block name='product_pack'}
                     {if $packItems}
@@ -134,7 +160,7 @@
                         {/foreach}
                     </section>
                     {/if}
-                  {/block}
+                  {/block}               
 
                   {block name='product_discounts'}
                     {include file='catalog/_partials/product-discounts.tpl'}

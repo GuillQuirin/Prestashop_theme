@@ -886,13 +886,22 @@ article>*{
   padding: 10px 0 !important;
 }
 
-.product-cover{
+#block-reassurance li{
+  display: inline-block;
+}
+
+#block-reassurance li .block-reassurance-item{
+  padding: 1rem;
+}
+
+.product-cover.hidden-sm-down{
   position: fixed;
   left: 0;
   top: 0px;
   height: 100%;
   width: 50%;
-  z-index: 0;
+  background-size: cover;
+  background-position: top center;
 }
 
 .product-cover img{
@@ -913,4 +922,58 @@ article>*{
 
 .group-span-filestyle .btn-default {
     background: #b9bebf;
+}
+
+/* commande */
+body#checkout section.checkout-step{
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+body#checkout section.checkout-step .content{
+  padding: 0;
+}
+
+#js-checkout-summary{
+  background-color: #d4d4d4;
+  color: black;
+  margin-top: 1rem;
+}
+
+@media (max-width: 767px){
+  body#checkout section.checkout-step{
+    margin: 1rem 0 0 0;
+  }  
+}
+
+.card-block a{
+  color: black;
+}
+
+#checkout-personal-information-step .done{
+  padding: inherit;
+  margin-right: inherit;
+}
+
+.form-control{
+  background-color: white;
+  color: black;
+  border: 1px solid #dedbdb;
+}
+
+body#checkout section.checkout-step .delivery-option{
+  background-color: white;
+}
+
+.custom-radio input[type=radio]:checked+span{
+  background-color: black;
+}
+
+.ps-shown-by-js button{
+  font-weight: 200;
+  width: 80%;
+  font-size: x-small;
+  background-color: #45f98a;
+  white-space: inherit;
 }
