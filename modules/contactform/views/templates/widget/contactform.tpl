@@ -20,8 +20,8 @@
       </div>
 
       <div class="form-group row">
-        <label class="col-md-3 form-control-label">{l s='Subject' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-6">
+        <label class="col-xs-3 form-control-label text-xs-left">{l s='Subject' d='Shop.Forms.Labels'}</label>
+        <div class="col-xs-6">
           <select name="id_contact" class="form-control form-control-select">
             {foreach from=$contact.contacts item=contact_elt}
               <option value="{$contact_elt.id_contact}">{$contact_elt.name}</option>
@@ -31,8 +31,8 @@
       </div>
 
       <div class="form-group row">
-        <label class="col-md-3 form-control-label">{l s='Email address' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-6">
+        <label class="col-xs-3 form-control-label text-xs-left">{l s='Email address' d='Shop.Forms.Labels'}</label>
+        <div class="col-xs-6">
           <input
             class="form-control"
             name="from"
@@ -45,8 +45,8 @@
 
       {if $contact.orders}
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Order reference' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+          <label class="col-xs-3 form-control-label text-xs-left">{l s='Order reference' d='Shop.Forms.Labels'}</label>
+          <div class="col-xs-6">
             <select name="id_order" class="form-control form-control-select">
               <option value="">{l s='Select reference' d='Shop.Forms.Help'}</option>
               {foreach from=$contact.orders item=order}
@@ -62,8 +62,8 @@
 
       {if $contact.allow_file_upload}
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Attachment' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+          <label class="col-xs-3 form-control-label text-xs-left">{l s='Attachment' d='Shop.Forms.Labels'}</label>
+          <div class="col-xs-6">
             <input type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
           </div>
           <span class="col-md-3 form-control-comment">
@@ -73,8 +73,8 @@
       {/if}
 
       <div class="form-group row">
-        <label class="col-md-3 form-control-label">{l s='Message' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-9">
+        <label class="col-xs-3 form-control-label text-xs-left">{l s='Message' d='Shop.Forms.Labels'}</label>
+        <div class="col-xs-9">
           <textarea
             class="form-control"
             name="message"

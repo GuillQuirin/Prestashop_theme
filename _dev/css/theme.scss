@@ -27,6 +27,7 @@
 @import "components/errors";
 @import "components/customization-modal";
 @import "components/sitemap";
+
 /*** HEADER ***/
 #header {
   background: grey;
@@ -419,6 +420,7 @@ button#button_header{
   height: 100%;
   width: 250px;
   left: -250px;
+  overflow: scroll;
 }
 
 #header .header-top{
@@ -498,8 +500,8 @@ button#button_header{
   left: 0;
   margin: 0;
   vertical-align: middle;
-  background-color: rgba(70, 255, 149, 0.37);
-  background-blend-mode: multiply;
+  background-color: rgb(70, 255, 149);
+  mix-blend-mode: multiply;
   transform: translateY(-50%);
   z-index: 98;
 }
@@ -513,8 +515,8 @@ button#button_header{
   text-align: center;
   left: 0;
   margin: 0;
-  background-color: rgba(70,255,149,.37);
-  background-blend-mode: multiply;
+  background-color: rgb(70,255,149);
+  mix-blend-mode: multiply;
   transform: translateY(-50%);
   padding: 25% 0;
 }
@@ -884,6 +886,31 @@ article>*{
   padding: 10px 0 !important;
 }
 
+.product-cover{
+  position: fixed;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+  z-index: 0;
+}
+
 .product-cover img{
   box-shadow: none;
+  height: 100%;
+}
+
+/* Contact */
+.contact-form{
+  background: #ececec;
+  padding: 2rem;
+}
+
+.contact-form .form-control{
+  background-color: white;
+  color: black;
+}
+
+.group-span-filestyle .btn-default {
+    background: #b9bebf;
 }
