@@ -23,15 +23,17 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div 	
-	class="background banner hidden-sm-down" 
-	href="{$banner_link}" 
-	title="{$banner_desc}" 
-	{if isset($banner_img)}
-		style="background-image:url({$banner_img});"
-	{/if}
->
-</div>
+{if $page.page_name != 'category'}
+	<div 	
+		class="background banner hidden-sm-down" 
+		href="{$banner_link}" 
+		title="{$banner_desc}" 
+		{if isset($banner_img)}
+			style="background-image:url({$banner_img});"
+		{/if}
+	>
+	</div>
+{/if}
 
 <img 	
 	class="banner hidden-md-up" 

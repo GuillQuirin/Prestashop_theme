@@ -31,6 +31,14 @@
 	    	{$cms_infos.text nofilter} 
 		</div>
 </a>
+
+{if $page.page_name == 'category' && $category.image.large.url}
+	<div class="hidden-sm-down background category-cover"
+		style="background-image: url({$category.image.large.url});">
+	</div>
+	<img class="hidden-md-up banner" src="{$category.image.large.url}">
+{/if}
+
 <div id="custom-text-respons" class="hidden-md-up">
 	<a href="{$urls.base_url}">
         {$cms_infos.text nofilter}
