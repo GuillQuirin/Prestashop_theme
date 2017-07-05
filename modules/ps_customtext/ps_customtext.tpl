@@ -24,9 +24,9 @@
 *}
 <a href="{$urls.base_url}">
 	{if $page.page_name == 'category'}
-		<div id="custom-text" class="custom-text-cat col-xs-12 col-sm-12 col-md-4">
+		<div id="custom-text" class="hidden-sm-down custom-text-cat col-xs-12 col-sm-12 col-md-4" {hook h='displayColor'}>
 	{else}
-		<div id="custom-text" class="hidden-sm-down">
+		<div id="custom-text" class="hidden-sm-down" {hook h='displayColor'}>
 	{/if}
 	    	{$cms_infos.text nofilter} 
 		</div>
@@ -39,7 +39,10 @@
 	<img class="hidden-md-up banner" src="{$category.image.large.url}">
 {/if}
 
-<div id="custom-text-respons" class="hidden-md-up">
+<div id="custom-text-respons" 
+	 class="hidden-md-up" 
+	 {hook h='displayColor'}
+	>
 	<a href="{$urls.base_url}">
         {$cms_infos.text nofilter}
   	</a> 

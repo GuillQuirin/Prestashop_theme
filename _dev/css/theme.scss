@@ -519,6 +519,7 @@ img.banner{
   text-align: center;
   left: 0;
   margin: 0;
+  z-index: 1;
   background-color: rgb(70,255,149);
   mix-blend-mode: multiply;
   transform: translateY(-50%);
@@ -693,6 +694,11 @@ article>*{
 #search_filters{
   padding:0;
   margin:0;
+}
+
+.hidden-md-up.banner{
+  position: relative;
+  z-index: 1;
 }
 
 /* 404 */

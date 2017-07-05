@@ -33,12 +33,12 @@
 		{/if}
 	>
 	</div>
-{/if}
 
-<img 	
-	class="banner hidden-md-up" 
-	style="max-width: 100%;"
-	{if isset($banner_img)}
-		src="{$banner_img}"
-	{/if}
->
+	<img 	
+		class="banner hidden-md-up" 
+		style="max-width: 100%;"
+		{if isset($banner_img)}
+			src="{$banner_img}"
+		{/if}
+	>
+{/if}

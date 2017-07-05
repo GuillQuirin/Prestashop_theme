@@ -80,7 +80,11 @@
       </div>
      </div>
      <div class="modal-footer">
-       {hook h='displayProductAdditionalInfo' product=$product}
+      <div class="row">
+        <div class="col-md-6 offset-xs-6">
+          {hook h='displayProductAdditionalInfo' product=$product}
+        </div>
+      </div>
     </div>
    </div>
  </div>
