@@ -423,6 +423,10 @@ button#button_header{
   overflow: scroll;
 }
 
+img.banner{
+  width: 100%;
+}
+
 #header .header-top{
   background: white;
 }
@@ -674,7 +678,7 @@ article>*{
 #custom-text.custom-text-cat{
   left: 0;
   right: inherit;
-  width: inherit;
+  padding: 5% 0;
   top: 50%;
 }
 
@@ -741,6 +745,33 @@ article>*{
   height: 100% !important;
   left: -30% !important; 
   margin-top: 0 !important;
+}
+
+.bootstrap-touchspin-up{
+  position: absolute !important;
+  width: 25% !important;
+  left: 60%;
+  top:2%;
+}
+
+.bootstrap-touchspin-down{
+  width: 25% !important;
+  position: absolute !important;
+  left: -24%;
+  top: 2px;
+}
+
+.product-quantity #quantity_wanted{
+  height: 23px;
+}
+
+.qty{
+  display: inline-block;
+  float: none !important;
+  vertical-align: middle;
+  margin-left: 30px;
+  margin-bottom:0; 
+  padding: 0;
 }
 
 .bootstrap-touchspin .input-group-btn-vertical i{

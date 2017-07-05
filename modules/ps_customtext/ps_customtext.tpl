@@ -24,7 +24,7 @@
 *}
 <a href="{$urls.base_url}">
 	{if $page.page_name == 'category'}
-		<div id="custom-text" class="custom-text-cat hidden-sm-down">
+		<div id="custom-text" class="custom-text-cat col-xs-12 col-sm-12 col-md-4">
 	{else}
 		<div id="custom-text" class="hidden-sm-down">
 	{/if}

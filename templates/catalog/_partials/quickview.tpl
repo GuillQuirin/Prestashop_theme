@@ -26,14 +26,18 @@
   <div class="modal-dialog" role="document">
    <div class="modal-content">
      <div class="modal-header text-xs-center text-md-center text-lg-center">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-         <span aria-hidden="true">&times;</span>
-        </button>
-        <h1 class="h1">{$product.name}</h1>
+        <div class="row">
+          <div class="col-xs-6 offset-xs-6">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h1 class="h1">{$product.name}</h1>
+          </div>
+        </div>
      </div>
      <div class="modal-body">
       <div class="row">
-        <div class="col-md-6 col-sm-6 hidden-xs-down">
+        <div class="col-sm-6 hidden-xs-down">
           {block name='product_cover_thumbnails'}
             {include file='catalog/_partials/product-cover-thumbnails.tpl'}
           {/block}
@@ -42,12 +46,13 @@
             <i class="material-icons arrow-down js-arrow-down">&#xE313;</i>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-sm-6">
           {block name='product_description_short'}
             <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
           {/block}
           <hr>
           {block name='product_buy'}
+            
             <div class="product-actions">
               <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
                 <input type="hidden" name="token" value="{$static_token}">

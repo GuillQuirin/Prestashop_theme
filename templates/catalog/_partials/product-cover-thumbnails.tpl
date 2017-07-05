@@ -38,8 +38,8 @@
   {/block}
 
   {block name='breadcrumb'}
-            {include file='_partials/breadcrumb.tpl'}
-          {/block}
+    {include file='_partials/breadcrumb.tpl'}
+  {/block}
           
   {block name='product_images'}
     <div class="js-qv-mask mask">

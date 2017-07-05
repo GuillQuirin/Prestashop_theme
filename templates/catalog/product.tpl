@@ -79,7 +79,7 @@
           </section>
         {/block}
         </div>
-        <div class="col-md-6 row">
+        <div class="col-md-6">
         
           {block name='page_content'}
               {block name='product_cover_thumbnails'}
@@ -122,12 +122,11 @@
                   <hr>
 
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xs-4">
                       <div class="product-quantity">
                         <div class="">
-                          <span class="">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
-                          <!-- <div class="qty"> -->
-                          <div>
+                          <span>{l s='Quantity' d='Shop.Theme.Catalog'}</span>
+                          <div class="qty">
                             <input
                               type="text"
                               name="qty"

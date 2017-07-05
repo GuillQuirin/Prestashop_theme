@@ -24,7 +24,7 @@
  *}
 <div class="product-variants">
   {foreach from=$groups key=id_attribute_group item=group}
-    <div class="clearfix product-variants-item col-md-4">
+    <div class="clearfix product-variants-item col-xs-4">
       <span class="col-md-6">{$group.name}</span>
       {if $group.group_type == 'select'}
         <select

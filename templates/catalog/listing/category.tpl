@@ -25,7 +25,7 @@
 {extends file='catalog/listing/product-list.tpl'}
 
 {block name="left_column"}
-	<div id="left-column" class="col-xs-12 col-sm-4 col-md-4">
+	<div id="left-column" class="col-xs-12 col-sm-12 col-md-4">
 	  {if $page.page_name == 'product'}
 	    {hook h='displayLeftColumnProduct'}
 	  {elseif $page.page_name == 'category'}
